@@ -4,7 +4,7 @@ phases:
     commands:
       - cd 01api
       - aws cloudformation package --template-file petstore-api.yaml
-                                   --s3-bucket s3://devops-week3-postman
+                                   --s3-bucket devops-week3-postman
                                    --s3-prefix api-code
                                    --output-template-file petstore-api-output.yaml
 artifacts:
